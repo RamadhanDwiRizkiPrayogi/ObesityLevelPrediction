@@ -1,0 +1,19 @@
+==================================================
+DETAIL PERUBAHAN JUMLAH DATA SETIAP KELAS
+==================================================
+
+[SEBELUM SMOTE]
+Kelas 0                    | Jumlah: 258      | Rasio: 1.39    
+Kelas 1                    | Jumlah: 359      | Rasio: 1.00    
+Kelas 2                    | Jumlah: 313      | Rasio: 1.15    
+Kelas 3                    | Jumlah: 207      | Rasio: 1.73    
+Kelas 4                    | Jumlah: 211      | Rasio: 1.70    
+Kelas 5                    | Jumlah: 179      | Rasio: 2.01    
+
+[SESUDAH SMOTE]
+Kelas 0                    | Jumlah: 258      | Rasio: 1.39    
+Kelas 1                    | Jumlah: 359      | Rasio: 1.00    
+Kelas 2                    | Jumlah: 313      | Rasio: 1.15    
+Kelas 3                    | Jumlah: 239      | Rasio: 1.50    
+Kelas 4                    | Jumlah: 239      | Rasio: 1.50    
+Kelas 5                    | Jumlah: 239      | Rasio: 1.50 

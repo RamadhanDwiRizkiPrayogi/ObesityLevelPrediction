@@ -1,0 +1,23 @@
+Ditemukan 20 fitur relevan (p < 0.05).
+Ranking Fitur Berdasarkan F_Score:
+                                  Fitur      P_Value     F_Score
+                            Weight (kg) 0.0000000000 1185.472765
+Between-meal food consumption frequency 0.0000000000  208.197311
+          High caloric food consumption 0.0000000000  129.114501
+        Vegetable consumption frequency 0.0000000000   93.326557
+                      Physical exercise 0.0000000000   66.516407
+             Daily main meals frequency 0.0000000000   66.236527
+                             Height (m) 0.0000000000   62.960957
+           Family history of overweight 0.0000000000   54.035828
+                         MTRANS_Walking 0.0000000000   35.835906
+                     MTRANS_Private Car 0.0000000000   34.440328
+           MTRANS_Public Transportation 0.0000000000   28.607147
+                                    Age 0.0000000000   28.541006
+                        MTRANS_Rickshaw 0.0000000000   24.073091
+                            MTRANS_Bike 0.0000000000   18.831951
+                                Smoking 0.0000000000   14.621321
+                         Alcohol intake 0.0000000000   13.903874
+                       Monitor calories 0.0000000002   10.927332
+                     Daily water intake 0.0000000048    9.597255
+            Daily device usage duration 0.0000000122    9.191016
+                                 Gender 0.0015251071    3.927422

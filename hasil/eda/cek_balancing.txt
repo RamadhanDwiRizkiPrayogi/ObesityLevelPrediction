@@ -1,0 +1,10 @@
+==========================================================================================
+KATEGORI                  | JUMLAH   | Perhitungan Rasio | RASIO    | STATUS
+------------------------------------------------------------------------------------------
+Normal_Weight             | 530      | 530 / 530         | 1.00     | Seimbang
+Overweight                | 423      | 530 / 423         | 1.25     | Seimbang
+Insufficient_Weight       | 378      | 530 / 378         | 1.40     | Seimbang
+Obesity_Type_I            | 317      | 530 / 317         | 1.67     | Tidak seimbang
+Obesity_Type_II           | 283      | 530 / 283         | 1.87     | Tidak seimbang
+Obesity_Type_III          | 251      | 530 / 251         | 2.11     | Tidak seimbang
+==========================================================================================

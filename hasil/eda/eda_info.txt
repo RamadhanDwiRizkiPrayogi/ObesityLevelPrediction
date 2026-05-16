@@ -1,0 +1,24 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2182 entries, 0 to 2181
+Data columns (total 17 columns):
+ #   Column                                   Non-Null Count  Dtype  
+---  ------                                   --------------  -----  
+ 0   Gender                                   2182 non-null   object 
+ 1   Age                                      2182 non-null   int64  
+ 2   Height (m)                               2182 non-null   float64
+ 3   Weight (kg)                              2182 non-null   float64
+ 4   Family history of overweight             2182 non-null   object 
+ 5   High caloric food consumption            2182 non-null   object 
+ 6   Vegetable consumption frequency          2182 non-null   object 
+ 7   Daily main meals frequency               2182 non-null   object 
+ 8   Between-meal food consumption frequency  2182 non-null   object 
+ 9   Smoking                                  2182 non-null   object 
+ 10  Alcohol intake                           2182 non-null   object 
+ 11  Daily water intake                       2182 non-null   object 
+ 12  Monitor calories                         2182 non-null   object 
+ 13  Physical exercise                        2182 non-null   object 
+ 14  Daily device usage duration              2182 non-null   object 
+ 15  Mode of transportation                   2182 non-null   object 
+ 16  Obesity level                            2182 non-null   object 
+dtypes: float64(2), int64(1), object(14)
+memory usage: 289.9+ KB
