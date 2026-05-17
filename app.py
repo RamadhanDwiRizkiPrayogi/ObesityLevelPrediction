@@ -33,17 +33,22 @@ obesity_label_map = {
 
 # ============ LOAD MODEL ============
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def load_pickle_model(filename, model_name):
+    model_path = os.path.join(BASE_DIR, filename)
+    try:
+        with open(model_path, 'rb') as file:
+            return pickle.load(file)
+    except Exception as error:
+        st.error(f"Model {model_name} gagal dimuat dari {model_path}: {error}")
+        return None
+
+
 models = {}
-try:
-    with open('rf_model_skenario1.pkl', 'rb') as file:
-        models['Skenario 1'] = pickle.load(file)
-except Exception:
-    models['Skenario 1'] = None
-try:
-    with open('rf_model_skenario2.pkl', 'rb') as file:
-        models['Skenario 2'] = pickle.load(file)
-except Exception:
-    models['Skenario 2'] = None
+models['Skenario 1'] = load_pickle_model('rf_model_skenario1.pkl', 'Skenario 1')
+models['Skenario 2'] = load_pickle_model('rf_model_skenario2.pkl', 'Skenario 2')
 
 
 def display_local_text_result(title, file_path):
