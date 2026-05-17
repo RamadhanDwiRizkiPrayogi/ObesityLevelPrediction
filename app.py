@@ -302,9 +302,9 @@ def show_prediction_page():
 
         with col_left:
             gender_label = st.selectbox(feature_title("Gender", "S1"), list(label_encodings['Gender'].keys()), key="pred_gender")
-            age = st.number_input(feature_title("Age", "S1"), min_value=0, step=1, key="pred_age")
-            height = st.number_input(feature_title("Height (m)", "S1 & S2"), min_value=0.0, step=0.01, format="%.2f", key="pred_height")
-            weight = st.number_input(feature_title("Weight (kg)", "S1 & S2"), min_value=0.0, step=0.1, format="%.1f", key="pred_weight")
+            age = st.number_input(feature_title("Age", "S1"), min_value=0, step=1, value=None, placeholder="Contoh: 25", key="pred_age")
+            height = st.number_input(feature_title("Height (m)", "S1 & S2"), min_value=0.0, step=0.01, format="%.2f", value=None, placeholder="Contoh: 1.78", key="pred_height")
+            weight = st.number_input(feature_title("Weight (kg)", "S1 & S2"), min_value=0.0, step=0.1, format="%.1f", value=None, placeholder="Contoh: 70.0", key="pred_weight")
             family_history_overweight_label = st.selectbox(feature_title("Family history of overweight", "S1 & S2"), list(label_encodings['Family history of overweight'].keys()), key="pred_fh")
             high_caloric_food_label = st.selectbox(feature_title("High caloric food consumption", "S1 & S2"), list(label_encodings['High caloric food consumption'].keys()), key="pred_hc")
             vegetable_consumption_label = st.selectbox(feature_title("Vegetable consumption frequency", "S1 & S2"), list(ordinal_encodings['Vegetable consumption frequency'].keys()), key="pred_vc")
@@ -323,7 +323,18 @@ def show_prediction_page():
         submitted = st.form_submit_button("🔮 Prediksi Dua Skenario", use_container_width=True)
 
     if submitted:
-        # data di encode sesuai dengan model yang digunakan
+        # ============ eringatan jika ada fitur numerik yang belum diisi ==============
+        if age is None:
+            st.warning("Age wajib diisi sebelum prediksi.")
+            return
+        if height is None:
+            st.warning("Height wajib diisi sebelum prediksi.")
+            return
+        if weight is None:
+            st.warning("Weight wajib diisi sebelum prediksi.")
+            return
+
+        # ======= encode sesuai dengan model yang digunakan===========
         
         # Label Encoding (binary features)
         gender = label_encodings['Gender'][gender_label]
