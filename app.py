@@ -254,9 +254,9 @@ def show_prediction_page():
     model_skenario_1 = models.get('Skenario 1')
     model_skenario_2 = models.get('Skenario 2')
 
-    if model_skenario_1 is None or model_skenario_2 is None:
-        st.error("Model skenario 1 dan/atau skenario 2 belum tersedia.")
-        return
+    # if model_skenario_1 is None or model_skenario_2 is None:
+    #     st.error("Model skenario 1 dan/atau skenario 2 belum tersedia.")
+    #     return
 
     st.markdown(
         "**Keterangan Fitur:** "
